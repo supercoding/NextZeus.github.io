@@ -32,3 +32,10 @@
 2. [redispvpranking](https://www.npmjs.com/package/redispvpranking)
 3. [fuckword](https://www.npmjs.com/package/fuckword)
 4. [loadjsonconfig](https://www.npmjs.com/package/loadjsonconfig)
+
+## 开源NPM下载量
+
+1. [fuckword2](https://npm-stat.com/charts.html?package=fuckword2&from=2015-09-01&to=2017-08-29)
+2. [redispvpranking](https://npm-stat.com/charts.html?package=redispvpranking&from=2015-09-01&to=2017-08-29)
+3. [fuckword](https://npm-stat.com/charts.html?package=fuckword&from=2015-09-01&to=2017-08-29)
+4. [loadjsonconfig](https://npm-stat.com/charts.html?package=loadjsonconfig&from=2015-09-01&to=2017-08-29)
