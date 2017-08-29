@@ -27,3 +27,8 @@
 3. [Docker](http://nextzeus.github.io/docker/)
 4. [Candy三消游戏](http://nextzeus.github.io/candy/)
 
+## 开源NPM
+1. [fuckword2](https://www.npmjs.com/package/fuckword2)
+2. [redispvpranking](https://www.npmjs.com/package/redispvpranking)
+3. [fuckword](https://www.npmjs.com/package/fuckword)
+4. [loadjsonconfig](https://www.npmjs.com/package/loadjsonconfig)
