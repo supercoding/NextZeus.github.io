@@ -29,3 +29,15 @@
 4. [pomelo-cli-exec 使用教程](https://github.com/NetEase/pomelo/wiki/pomelo-cli-exec%E5%91%BD%E4%BB%A4%E4%BD%BF%E7%94%A8)
 
 
+## 开源NPM
+1. [fuckword2](https://www.npmjs.com/package/fuckword2)
+2. [redispvpranking](https://www.npmjs.com/package/redispvpranking)
+3. [fuckword](https://www.npmjs.com/package/fuckword)
+4. [loadjsonconfig](https://www.npmjs.com/package/loadjsonconfig)
+
+## 开源NPM下载量
+
+1. [fuckword2](https://npm-stat.com/charts.html?package=fuckword2&from=2016-07-01&to=2017-08-29)
+2. [redispvpranking](https://npm-stat.com/charts.html?package=redispvpranking&from=2016-07-01&to=2017-08-29)
+3. [fuckword](https://npm-stat.com/charts.html?package=fuckword&from=2016-07-01&to=2017-08-29)
+4. [loadjsonconfig](https://npm-stat.com/charts.html?package=loadjsonconfig&from=2016-07-01&to=2017-08-29)
