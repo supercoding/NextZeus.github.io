@@ -15,3 +15,22 @@ Express + JWT＋ Mongoose + ioredis + request (Promise)
 6. 还要在使用mongoose, request的时候，处理返回结果的方式也有些变化，request虽然支持了promise,但是我觉得支持的不是那么的完美。查看stack overflow后，发现要把原来的xxx方法替换成xxxAsync方法. 
 7. mongoose 查询或者创建的数据，通过return 返回到下一个then(function(result){})中。 就像async.waterfall(...function(info,cb){})一样。 了解了之后，也感觉到了promise还是有那么一点不错的地方。
 8. 说到头来 其实最痛苦的过程 就是要改变原来的习惯，去使用新的方法。 
+
+
+
+
+express web框架 
+
+web application
+
+
+mongoose redis request 
+
+node_mongodb , mongoose   mongodb 数据库提供服务
+
+node_redis ioredis
+
+
+bluebird 
+
+Promise 
