@@ -18,7 +18,7 @@
 * 参与过Pomelo中的开源项目以及其他开源项目
 * 了解Typescript, PHP 语言
 * 了解React, ReactNative, VueJS ,EJS 
-* 了解Docker 
+* 了解Docker & deploy application with docker
 
 * 期望职位: Node.js工程师
 * 期望薪资: 20~30K
