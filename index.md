@@ -18,16 +18,48 @@
 * 参与过Pomelo中的开源项目以及其他开源项目
 * 了解Typescript, PHP 语言
 * 了解React, ReactNative, VueJS ,EJS 
+* 了解Docker 
+
+* 期望职位: Node.js工程师
+* 期望薪资: 20~30K
+* 期望地点: 北京 上海
 
 
-## 文章列表
 
-1. [Pomelo](http://nextzeus.github.io/pomelo/)
-2. [Node.js](http://nextzeus.github.io/nodejs/)
-3. [Docker](http://nextzeus.github.io/docker/)
-4. [Candy三消游戏](http://nextzeus.github.io/candy/)
+## 工作生涯
 
-## 开源NPM
+### 实习 (2013/6 ~~ 2014/5)
+* 公司: 深圳豆豆生活移动互联有线公司
+* 职位: Node.js工程师
+* 产品: 微信公众号企业员工名片
+* 技术: Node.js ,Mysql ,Express ,Bootstrap ,Jquery 
+* 职责: 对接微信公众号API；根据需求实现功能; 开发管理后台
+
+### 第一份工作(2014/6 ~~ 2015/11)
+* 公司: 郑州三生石科技有限公司
+* 职位: Node.js服务器端工程师
+* 产品: 疾风之刃(MMOARPG)手游 [线上运营中]
+* 技术: Node.js ,Pomelo ,Mysql ,Redis ,Docker
+* 职责: 根据策划需求，设计实现手游中大部分的系统功能；
+        PVP多人实时对战系统设计；维护线上服务器稳定运行。
+
+### 第二份工作(2015/11 ~~ 至今)
+* 公司: 云智联(北京)科技有限公司
+* 职位: Node.js服务器端工程师
+* 产品: 方阵英雄(H5),多人博彩类游戏 [线上运营中]
+* 技术: Express ,Pomelo ,Mongodb ,Redis ,Pm2 ,Forever
+* 职责: 根据策划的需求，设计实现游戏中的系统; 负责搭建服务器架构，维护线上服务器的运行。
+
+## 技能
+1. 框架: Express, Koa, Pomelo
+2. 数据库: Mongodb, Mysql, Redis
+3. Process Manager: PM2, Forever
+4. 运维部署: Linux, Docker 
+5. 语言: Javascrit ,Python, TypeScript
+6. 版本控制工具: Git 
+
+## 开源项目
+
 1. [fuckword2](https://www.npmjs.com/package/fuckword2)
 2. [redispvpranking](https://www.npmjs.com/package/redispvpranking)
 3. [fuckword](https://www.npmjs.com/package/fuckword)
@@ -39,3 +71,12 @@
 2. [redispvpranking](https://npm-stat.com/charts.html?package=redispvpranking&from=2016-07-01&to=2017-08-29)
 3. [fuckword](https://npm-stat.com/charts.html?package=fuckword&from=2016-07-01&to=2017-08-29)
 4. [loadjsonconfig](https://npm-stat.com/charts.html?package=loadjsonconfig&from=2016-07-01&to=2017-08-29)
+
+## 文章列表
+1. [Pomelo](http://nextzeus.github.io/pomelo/)
+2. [Node.js](http://nextzeus.github.io/nodejs/)
+3. [Docker](http://nextzeus.github.io/docker/)
+4. [Candy三消游戏](http://nextzeus.github.io/candy/)
+
+## 个人博客
+1. [oschina](https://my.oschina.net/nextzeus/blog)
