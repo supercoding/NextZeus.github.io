@@ -35,4 +35,6 @@ sed -i '' "s/version\"\: \"${version}/version\"\: \"${version_new}/g" "${res_ser
 
 tag_name="${build_tag}"
 git tag "${tag_name}"
+git add package.json
+git commit -a -m 'update tag version'
 git push origin "${tag_name}" --tags
