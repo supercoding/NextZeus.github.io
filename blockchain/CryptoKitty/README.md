@@ -139,3 +139,47 @@ event.watch(function(err, info){
 });
 
 ```
+## Deploy CryptoKitties Smart Contract to Ropsten network
+
+Error
+
+#### Error: Contract transaction couldn't be found after 50 blocks
+
+[truffle-contract-transaction-couldnt-be-found-after-50-blocks](https://ethereum.stackexchange.com/questions/26599/truffle-contract-transaction-couldnt-be-found-after-50-blocks)
+
+#### Error encountered, bailing. Network state unknown. Review successful transactions manually.
+
+#### Error: The contract code couldn't be stored, please check your gas amount.
+
+gas 设置的太小了。
+
+```js
+var HDWalletProvider = require("truffle-hdwallet-provider");
+
+let mnemonic = 'metamask mnemonic';
+
+module.exports = {
+  networks: {
+    dev: {
+      host: "127.0.0.1",
+      port: 8545,
+      network_id: "*" // Match any network id
+    },
+    ropsten: {
+      provider: new HDWalletProvider(mnemonic, "https://ropsten.infura.io/"),
+      gas: 4700000,
+      gasPrice: 65000000000,
+      network_id: 3
+    }
+  },
+  solc: {
+    optimizer: {
+      enabled: true,
+      runs: 200
+    }
+  }
+};
+
+//$truffle migrate --network ropsten --reset
+```
+
