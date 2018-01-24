@@ -14,10 +14,6 @@ networks {
 	}
 }
 
-//启动本地私链
-geth --dev --rpc --rpcapi “eth,web3,personal,net” --cache=1024 --rpcport 8545 --rpcaddr 0.0.0.0 --rpccorsdomain "*"  --mine --minerthreads=1 console
-
-
 //精品 first-steps-with-ethereum-private-networks-and-smart-contracts-on-ubuntu-16-04/
 https://alanbuxton.wordpress.com/2017/07/19/first-steps-with-ethereum-private-networks-and-smart-contracts-on-ubuntu-16-04/
 
