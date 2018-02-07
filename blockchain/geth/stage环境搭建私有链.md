@@ -50,3 +50,6 @@ personal.unlockAccount(eth.coinbase,'hero1',30000)
 ## 搭建本地区块链浏览器
 
 [参考github](https://github.com/carsenk/explorer)
+
+## smart-contract-watch
+[smart-contract-watch](https://github.com/Neufund/smart-contract-watch)
