@@ -6,9 +6,6 @@
   "author": "nextzeus",
   "license": "ISC",
   "dependencies": {
-    "nodemailer": "^4.6.0",
-    "nodemailer-express-handlebars": "^3.0.0",
-    "nodemailer-smtp-transport": "^2.7.4",
     "shelljs": "^0.7.8"
   }
 }
