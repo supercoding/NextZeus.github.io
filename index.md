@@ -16,6 +16,7 @@
 * 使用过Python+BeautifulSoup爬取网络主播信息
 * 参与NodeParty[北京]，分享过Pomelo服务器框架
 * 参与过Pomelo中的开源项目以及其他开源项目
+* 了解区块链并参与过游戏开发流程
 * 了解Typescript, PHP 语言
 * 了解React, ReactNative, VueJS ,EJS 
 * 了解Docker & deploy application with docker
@@ -29,7 +30,7 @@
 ### 第二份工作(2015/11 ~~ 至今)
 * 公司: 云智联(北京)科技有限公司
 * 职位: Node.js服务器端工程师
-* 产品: 方阵英雄(H5),多人博彩类游戏 [线上运营中]
+* 产品: 方阵英雄(H5),多人博彩类游戏 [线上运营中] 区块链游戏
 * 技术: Express ,Pomelo ,Mongodb ,Redis ,Pm2 ,Forever
 * 职责: 根据策划的需求，设计实现游戏中的系统; 负责搭建服务器架构，维护线上服务器的运行。
 
@@ -55,6 +56,7 @@
 4. 运维部署: Linux, Docker 
 5. 语言: Javascrit ,Python, TypeScript
 6. 版本控制工具: Git 
+7. 区块链游戏开发
 
 ## 开源项目
 
