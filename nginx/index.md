@@ -38,3 +38,14 @@ location /api/ {
 3. proxy_pass
 4. rewrite 
 5. listen 80
+
+## https GET query params lost
+
+```
+$url$is_args$args
+$is_args$args
+
+$is_args判断是否有query string 有的话，自动补上 ?
+$args 就是丢失的query string
+
+```
