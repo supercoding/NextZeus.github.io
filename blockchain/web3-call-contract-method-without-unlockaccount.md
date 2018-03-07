@@ -4,7 +4,7 @@
 
 ```
 
-let myContract = contInstance.getContractInstance('zoo');
+let myContract = ...;
     
 // suppose you want to call a function named myFunction of myContract
 
