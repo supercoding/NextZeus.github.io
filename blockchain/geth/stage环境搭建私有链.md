@@ -12,35 +12,33 @@ genesis.json
 
 {
   "config": {
-    "chainId": 1907,
+    "chainId": 98765,
     "homesteadBlock": 0,
     "eip155Block": 0,
     "eip158Block": 0
   },
   "difficulty": "40",
-  "gasLimit": "4700000",
+  "gasLimit": "1000000",
   "alloc": {}
 }
-
-rm -rf 
 
 账号：
 dcfe9cccc0dcf170cff5ee1f758a93543fcfc28a hero1
 1b5a02fff927692d60443b2e6fc2463cf865c5af hero2
 
-go-ethereum/build/bin/geth --datadir /data/work/gethnode1 account new
+geth --datadir /data/work/gethnode1 account new
 
-go-ethereum/build/bin/geth --datadir /data/work/gethnode1 account new
+geth --datadir /data/work/gethnode1 account new
 
 
-go-ethereum/build/bin/geth --datadir /data/work/gethnode1 init go-ethereum/genesis.json
+geth --datadir /data/work/gethnode1 init go-ethereum/genesis.json
 
-go-ethereum/build/bin/geth --datadir "/data/work/gethnode1" --networkid 98765 --rpc --rpcport "8545" --rpcaddr "0.0.0.0" --rpcapi "db,eth,web3,personal,net" --mine --minerthreads=1 console
+geth --datadir "/data/work/gethnode1" --networkid 98765 --rpc --rpcport "8545" --rpcaddr "0.0.0.0" --rpcapi "db,eth,web3,personal,net" --mine --minerthreads=1 console
 
 miner.stop()
 miner.start(1) 开始挖矿
 
-go-ethereum/build/bin/geth attach /data/work/gethnode1/geth.ipc
+geth attach /data/work/gethnode1/geth.ipc
 
 personal.unlockAccount(eth.coinbase,'hero1',30000)
 
