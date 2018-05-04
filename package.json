@@ -6,6 +6,7 @@
   "author": "nextzeus",
   "license": "ISC",
   "dependencies": {
+    "protobufjs": "^6.8.6",
     "shelljs": "^0.7.8"
   }
 }
