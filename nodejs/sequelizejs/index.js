@@ -26,12 +26,27 @@ class Connection{
 
 class User {
     constructor(sequelize){
-        this.UserSchema = sequelize.define('user', {
+        this.UserSchema = sequelize.define('user', 
+        {
             firstName: {
                 type: Sequelize.STRING
             },
             lastName: {
                 type: Sequelize.STRING
+            }
+        }, 
+        {
+            getterMethods: {
+                fullName() {
+                    return this.firstName + ' ' + this.lastName;
+                }
+            },
+            setterMethods: {
+                fullName(value) {
+                    const names = value.split(' ');
+                    this.setDataValue('firstName', names[0]);
+                    this.setDataValue('lastName', names[1]);
+                }
             }
         });
     }
@@ -67,7 +82,7 @@ return userM.findAll()
         model: userM,
         logging: console.log,
         plain: false,
-        raw: true, //false 查询出的结果包含了model definition
+        raw: false, //false 查询出的结果包含了model definition
         type: Sequelize.QueryTypes.SELECT,
         replacements: { id: 1}
     });
@@ -85,10 +100,45 @@ return userM.findAll()
 })
 .then((info) => {
     console.log('select * from users where id = ? and firstName = ?;', info);
+    return userM.findOne({
+        where: {id: 1},
+        attributes: ['id', ['firstName', 'name']] //firstName as name
+    });
+})
+.then((info) => {
+    console.log('findOne;', info.dataValues);
+    return userM.findById(1)
+})
+.then((info) => {
+    console.log('findById;', info.dataValues);
+    return userM.max('id');
+})
+.then((info) => {
+    console.log('max:', info);
+    return userM.findOrCreate({where : { id: 1}, defaults: {job: 'Technical Lead Javascript'}})
+        .spread((user, created) => {
+            console.log('findOrCreate ',user.get());
+            console.log('created ',created);
+        });
+})
+.then(() => {
+    return userM.findAndCountAll({
+        where: {
+            id: {
+                [Sequelize.Op.gt]: 2
+            }
+        },
+        offset:2,
+        limit: 2,
+        raw: true
+    })
+    .then(info => {
+        console.log('findAndCountAll ',info);
+    })
 })
 .then(() => {
     return connM.sequelize.close();
 })
 .catch(e => {
-    console.error('error %j',e);
+    console.error('error %j',e, new Error(e).stack);
 });
