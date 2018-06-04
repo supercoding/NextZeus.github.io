@@ -28,7 +28,7 @@ db.getCollection('users').update({uid:1,'items.itemId':'item001'},{$inc:{'items.
 Output
 {
     uid: 1,
-    items: [
+    items: [{}
         {
             itemId: 'item001',
             amount: 1
