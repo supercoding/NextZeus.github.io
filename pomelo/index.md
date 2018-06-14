@@ -317,8 +317,10 @@ var app = pomelo.createApp({
 ### 早期写的简书文章
 [Pomelo游戏开发~不再更新](http://www.jianshu.com/c/f42580039b45)
 
+
 ### Lordofpomelo官方代码不能运行问题汇总
 1. [generic-pool callback is not a function](https://blog.csdn.net/li10024900/article/details/64926935)(版本更新 有些api变化)
+2. mime.lookup is not a function (mime 版本更新 lookup方法去掉了 自己找老版本的，补回来就OK了)
 
 ### 其他文章
 0. [installPomeloDep](installPomeloDep/)
