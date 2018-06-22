@@ -10,19 +10,18 @@
 * 了解ES6新特性以及用法，并在实际项目中使用
 * 开发游戏包括：MMORPG, ARPG, H5
 * 熟悉游戏开发框架: Pomelo ,Express, Koa 
-* 熟悉数据库：MySQL, Redis, Mongodb
+* 熟悉数据库：MySQL, Redis, Mongodb并熟练操作命令
 * 可以独立部署服务器，了解Linux操作系统与基本shell命令
-* 熟练使用pm2,forever 部署管理服务器群
+* 熟练使用pm2,forever, 能够独立部署管理服务器
 * 使用过Python+BeautifulSoup爬取网络主播信息
 * 参与NodeParty[北京]，分享过Pomelo服务器框架
 * 参与过Pomelo中的开源项目以及其他开源项目
-* 了解区块链并参与过游戏开发流程
-* 了解Typescript, PHP 语言
+* 了解Typescript, Python 语言
 * 了解React, ReactNative, VueJS ,EJS 
-* 了解Docker & deploy application with docker
+* 了解Docker, Docker-Compose & deploy express application with docker, docker-compose
 
-* 期望职位: Node.js工程师
-* 期望薪资: 20~30K
+* 期望职位: Node.js高级工程师
+* 期望薪资: 25~40K
 * 期望地点: 北京 上海
 
 ## 工作生涯
@@ -30,8 +29,8 @@
 ### 第二份工作(2015/11 ~~ 至今)
 * 公司: 云智联(北京)科技有限公司
 * 职位: Node.js服务器端工程师
-* 产品: 方阵英雄(H5),多人博彩类游戏 [线上运营中] 区块链游戏
-* 技术: Express ,Pomelo ,Mongodb ,Redis ,Pm2 ,Forever
+* 产品: 方阵英雄(H5),多款单人,多人玩法博彩类游戏, 区块链养成游戏
+* 技术: Express ,Pomelo ,Mongodb ,Redis, Blockchain, web3.js 
 * 职责: 根据策划的需求，设计实现游戏中的系统; 负责搭建服务器架构，维护线上服务器的运行。
 
 ### 第一份工作(2014/6 ~~ 2015/11)
@@ -51,12 +50,11 @@
 
 ## 技能
 1. 框架: Express, Koa, Pomelo
-2. 数据库: Mongodb, Mysql, Redis
+2. 数据库: Mongodb, Mysql, Redis, Memcached
 3. Process Manager: PM2, Forever
-4. 运维部署: Linux, Docker 
+4. 运维部署: Linux, Nginx, Docker, Docker-Compose 
 5. 语言: Javascrit ,Python, TypeScript
 6. 版本控制工具: Git 
-7. 区块链游戏开发
 
 ## 开源项目
 
