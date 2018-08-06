@@ -43,4 +43,14 @@ run().then(async () => {
 isNew--- { _id: 5aba094f63c6144fb5a23e62, uid: 1 }
 user  { _id: 5aba094f63c6144fb5a23e62, uid: 1, __v: 0 }
 not new { _id: 5aba094f63c6144fb5a23e62, uid: 1, __v: 0, name: 'hello' }
+
 ```
+
+# Sharded 分片
+
+- 分片：每个分片包含分片数据的子集。从MongoDB 3.6开始，必须将分片部署为副本集。
+- mongos：mongos充当查询路由器，提供客户端应用程序和分片集群之间的接口。
+- 配置服务器：配置服务器存储群集的元数据和配置设置。从MongoDB 3.4开始，配置服务器必须部署为副本集（CSRS）。
+
+注意内存争用可能会成为大型部署的问题
+
