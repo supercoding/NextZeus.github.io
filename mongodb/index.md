@@ -68,4 +68,10 @@ let conn = mongoose.createConnection(url, {user:'xxx', pass:'xxx', config:{autoI
 let schema =  new mongoose.Schema({},{read:'secondary'})
 let model = conn.model(modelName, schema);
 
+// 3
+let conn = mongoose.createConnection(url, {user:'xxx', pass:'xxx', config:{autoIndex: false}};
+let schema = new mongoose.Schema({});
+let model = conn.model(modelName, schema);
+model.find().read('secondary').then(info => {});
+
 ```
