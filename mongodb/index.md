@@ -54,3 +54,18 @@ not new { _id: 5aba094f63c6144fb5a23e62, uid: 1, __v: 0, name: 'hello' }
 
 注意内存争用可能会成为大型部署的问题
 
+# mongoose connect secondary replicateSet
+
+```
+
+// 1 
+
+let conn = mongoose.createConnection(url, {user:'xxx', pass:'xxx', config:{autoIndex: false},replset: {readPreference: 'secondary'}});
+
+// 2  
+
+let conn = mongoose.createConnection(url, {user:'xxx', pass:'xxx', config:{autoIndex: false}});
+let schema =  new mongoose.Schema({},{read:'secondary'})
+let model = conn.model(modelName, schema);
+
+```
