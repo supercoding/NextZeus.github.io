@@ -1,5 +1,6 @@
 # 使用nodejs readline分析gzip日志
 
+- 资料 [read-gzip-stream-line-by-line](https://stackoverflow.com/questions/38074288/read-gzip-stream-line-by-line)
 
 ## 错误日志格式
 
