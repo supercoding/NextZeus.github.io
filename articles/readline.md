@@ -56,10 +56,9 @@ let lineReader = readline.createInterface({
   input: fs.createReadStream('/data/logs/server-prod-error.log.gz').pipe(zlib.createGunzip())
 });
 
-let n = 0;
 lineReader.on('line', (line) => {
   let startStr = '{"areaId';
-  let endStr = '{"areaId';
+  let endStr = '"__v":0}';
   if (line.includes('WriteError') && line.includes(startStr) && line.includes(endStr)){
     console.warn('========>>>>>>>>', line);
     let index = line.indexOf(startStr);
