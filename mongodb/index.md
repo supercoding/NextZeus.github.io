@@ -75,3 +75,32 @@ let model = conn.model(modelName, schema);
 model.find().read('secondary').then(info => {});
 
 ```
+
+# mongoose no schema query data
+
+```
+let mongoose = require('mongoose');
+
+let conn = mongoose.createConnection('mongodb://localhost/test', {'autoIndex': false});
+
+
+conn.on('connected', function (err) {
+    console.log('mongoose connected  error ' + err);
+});
+
+conn.on('error', function (err) {
+    console.log('mongoose throw error  ' + err);
+});
+
+conn.on('disconnected', function (err) {
+    console.log('mongoose disconnected error ' + err);
+});
+
+let userModel = conn.model('user', new mongoose.Schema({ any: mongoose.Schema.Types.Mixed }));
+
+userModel.findOne().then(info => {
+    let user = info.toJSON(); // 转化为json -> mongodb $toObject()底层处理转化成了一个object;
+    console.log('nickname %j', user.nickname);
+});
+
+```
