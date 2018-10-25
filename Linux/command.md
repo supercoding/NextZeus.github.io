@@ -9,3 +9,6 @@ cat /proc/cpuinfo| grep "cpu cores"| uniq
 
 ## 查看逻辑CPU的个数
 cat /proc/cpuinfo| grep "processor"| wc -l
+
+
+du -sh *  列出当前文件夹下所有文件大小，不递归文件夹
