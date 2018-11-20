@@ -1,3 +1,45 @@
+# pm2 启动方式
+
+#### start app
+
+> pm2 start ecosystem.config.js # use variable from `env`
+>
+> pm2 start ecosystem.config.js --env production # use variable from `env_production`
+
+#### force update environment 强制更新环境变量
+
+> pm2 restart ecosystem.config.js --update-env # refresh the environment
+>
+> pm2 restart ecosystem.config.js --env production --update-env # switch the environment
+
+
+## pm2 update
+	pm2 update is necessary in order to refresh the PM2 daemon
+
+- Process /data/work/gp-casino/asia/Server/bin/www restored
+
+## pm2 reload
+
+说明：Applying action reloadProcessId on app 
+
+当你遇到下面的情况时：
+```
+
+>>>> In-memory PM2 is out-of-date, do: 
+>>>> $ pm2 update
+
+```
+
+如果你不执行pm2 update, 而是直接pm2 reload ,此时的pm2 进程中，包含有旧的_old_2|appName &新的进程2|appName.
+执行pm2 update之后，再执行pm2 reload，就不会出现旧的进程一直存在的问题。
+
+
+## ecosystem.config.js
+- Once added to your process list, the process environment is immutable(不可变)
+- 启动app后，进程信息注册到了$HOME/.pm2/dump.pm2. pm2 update all的时候，会启动所有注册过的进程 (pm2 cleardump清空)
+
+```
+
 ## pm2 cluster request 400
 
 1. pm2 cluster模式下 即使两个不同的服务，端口冲突，也不会报错。会被pm2的master 放到一个cluster下。 异常表现，请求接口时304，时400.
