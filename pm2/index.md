@@ -38,7 +38,6 @@
 - Once added to your process list, the process environment is immutable(不可变)
 - 启动app后，进程信息注册到了$HOME/.pm2/dump.pm2. pm2 update all的时候，会启动所有注册过的进程 (pm2 cleardump清空)
 
-```
 
 ## pm2 cluster request 400
 
