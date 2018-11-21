@@ -2,7 +2,7 @@ title: Jack Li/老顽童
 description: Jack Li`s Blog
 google_analytics: 
 show_downloads: false
-theme: jekyll-theme-merlot
+theme: jekyll-theme-hacker
 
 gems:
   - jekyll-mentions
