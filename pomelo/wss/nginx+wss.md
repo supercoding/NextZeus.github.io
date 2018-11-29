@@ -30,6 +30,10 @@ map $http_upgrade $connection_upgrade {
     '' close;
 }
 
+upstream gate {
+    server 10.0.1.225:3014;
+}
+
 server {
 	listen       443 ssl;
 	server_name  pomelo.game.com;
@@ -42,7 +46,7 @@ server {
 	ssl_ciphers HIGH:!aNULL:!MD5;
 	ssl_prefer_server_ciphers on;
 
-    access_log  ./logs/https.pomelo.game.com.access.log main;
+        access_log  ./logs/https.pomelo.game.com.access.log main;
 
 	location / {
 	    index  index.html index.htm;
@@ -58,7 +62,7 @@ server {
 
 ### 客户端访问
 
-url:	'wss://pomelo.game.com:3014'
+url:	'wss://pomelo.game.com/gate'
 
 ## nginx域名转发到其他服务器
 
